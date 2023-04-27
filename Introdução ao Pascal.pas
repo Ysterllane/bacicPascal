@@ -1,22 +1,22 @@
-// comentários de uma linha
-(* conetários de várias linhas *)
+// comentï¿½rios de uma linha
+(* conetï¿½rios de vï¿½rias linhas *)
 
 // programa NOME DO PROGRAMA
 Program comoFuncionaPzim ;
 
-// uma constante é algo qua nunca vai mudar o valor 
+// uma constante ï¿½ algo qua nunca vai mudar o valor 
 const pi = 3.14159;
 
-//Declaração de variaveis que mudam
+//Declaraï¿½ï¿½o de variaveis que mudam
 var a, b, total : real; //Decimal + ou - (1.4) 
 
 a1, b1, c1 : integer; //inteiro + e -
 
-nomeComposto : string; //caracteres: letras e números ("maria', "1234")
+escolha: string; //caracteres: letras e nï¿½meros ("maria', "1234")
 
 idade : char; //um caractere 91, d, .)
 
-Begin  //Começo
+Begin  //Comeï¿½o
 
 //mudar a cor do texto
 textcolor(white);
@@ -41,28 +41,28 @@ textcolor(white);
   White = 15;*)
 
   TextBackground(red);
-  writeln('Digite um número: '); //escreva e pule uma linha
+  writeln('Digite um nï¿½mero: '); //escreva e pule uma linha
  
   readln(a); //leia uma variavel e pule uma linha
  
-  write('Digite um outro número: '); //escreva
+  write('Digite um outro nï¿½mero: '); //escreva
  
   read(b); //leia uma variavel
  
-// uma forma de dividir:
+// uma forma de dividir Ã© usando div
   total := a / b;
-// atribuição de igualdade, usa-se :=
+// atribuiï¿½ï¿½o de igualdade, usa-se :=
 
 // arredondamento de real
-  writeln('Sua divisão eh: ', total:6:2);
+  writeln('Sua divisï¿½o eh: ', total:6:2);
   
-// outra forma de operação  
+// outra forma de operaï¿½ï¿½o  
   writeln('Sua soma eh: ', a+b:6:2);
   
   // if then
   if (total = 2) then
       begin
-        write('Seu total é 2');
+        write('Seu total ï¿½ 2');
       end
       
 	// else if then
@@ -73,11 +73,21 @@ textcolor(white);
   //
 	else
 	   begin
-	     write('Seu número ao quadrado eh ', sqr(total) );
+	     write('Seu nï¿½mero ao quadrado eh ', sqr(total) );
 	     // outra forma: total*total;
 	   end;
 	   
   //clrscr; comando de limpara tela
   //readkey; so volta pra tela do codigo qnd digitar uma tecla
+
+  write('Vc quer ter acesso a calculadora? (S ou N)');
+  read(escolha);
+      case escolha of
+      's':
+       writeln('ok');
+      'n':
+        writeln('sair');
+        end;
+
   
 End. //Fim

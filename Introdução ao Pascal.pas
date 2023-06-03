@@ -50,14 +50,15 @@ textcolor(white);
   read(b); //leia uma variavel
  
 // uma forma de dividir é usando div
+
   total := a / b;
 // atribui��o de igualdade, usa-se :=
 
 // arredondamento de real
-  writeln('Sua divis�o eh: ', total:6:2);
+  writeln('Sua divis�o eh: ', total:2:2);
   
 // outra forma de opera��o  
-  writeln('Sua soma eh: ', a+b:6:2);
+  writeln('Sua soma eh: ', a+b:2:2);
   
   // if then
   if (total = 2) then
@@ -65,21 +66,22 @@ textcolor(white);
         write('Seu total � 2');
       end
       
-	// else if then
+  // else if then
   else if (total>=2) then
        begin 
          write('sal');
        end
-  //
+  //lse
 	else
 	   begin
 	     write('Seu n�mero ao quadrado eh ', sqr(total) );
-	     // outra forma: total*total;
+	                           // outra forma: total*total;
 	   end;
 	   
   //clrscr; comando de limpara tela
   //readkey; so volta pra tela do codigo qnd digitar uma tecla
 
+//A partir daqui enho que estudar mais
   write('Vc quer ter acesso a calculadora? (S ou N)');
   read(escolha);
       case escolha of
